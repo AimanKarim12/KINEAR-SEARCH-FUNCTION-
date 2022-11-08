@@ -1,18 +1,18 @@
-#LINEAR FUNCTION 
+# Linear Search
 
-def linearSearch(array, item, num):
 
-    for i in range(0, num):
-        if (array[i] == item):
+def linearSearch(array, x):
+    for i in range(0, 9):
+        if (array[i] == x):
             return i
     return -1
 
-#TEST INPUT
-array1 = [2, 4, 0, 1, 9]
-item1 = 4
-num1 = len(array1)
-result = linearSearch(array1, num1, item1)
+
+nums = [10, 30, 40, 45, 70, 80, 85, 90, 100]
+x = 100
+result = linearSearch(nums, x)
 if(result == -1):
-    print("ITEM NOT FOUND")
+    print("ELEMENT NOTFOUND")
 else:
-    print("ITEM FOUND AT", result)
+    print("ELEMENT FOUND AT: ", result)
+
